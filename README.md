@@ -1,2 +1,14 @@
 # the_joy_of_accounting
-Things related to The Joy of Accounting
+
+## what
+
+Notes on
+[ The Joy of Accounting](https://www.goodreads.com/book/show/55436591-the-joy-of-accounting)
+and related code.
+
+## why
+
+I'm using this to experiment with uses of the
+[Claude Developer Platform](https://platform.claude.com)
+
+- [What is Accounting?](/notes/1_what_is_accounting.md)
