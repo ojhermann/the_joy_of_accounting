@@ -2,6 +2,7 @@
 python.uv_venv_auto = "create|source"
 
 [tasks]
+zj_new = "zj -s joya -l .layout.kdl"
 watch_ruff = "watchexec --exts py -- sh -c 'clear && uv run ruff check'"
 watch_ty = "watchexec --exts py -- sh -c 'clear && uv run ty check'"
 watch_unit_tests = "watchexec --exts py -- sh -c 'clear && uv run pytest -m unit_test'"
