@@ -8,3 +8,4 @@ watch_unit_tests = "watchexec --exts py -- sh -c 'clear && uv run pytest -m unit
 
 [tools]
 uv = "latest"
+watchexec = "latest"
