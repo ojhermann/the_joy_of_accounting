@@ -1,4 +1,17 @@
 [[language]]
+name = "markdown"
+auto-format = true
+text-width = 80
+formatter = { command = "prettier", args = [
+  "--prose-wrap",
+  "always",
+  "--print-width",
+  "80",
+  "--parser",
+  "markdown",
+] }
+
+[[language]]
 name = "python"
 auto-format = true
 formatter = { command = "ruff", args = ["format", "--quiet", "-"] }
