@@ -22,6 +22,11 @@ dev = [
   "vulture>=2.15",
 ]
 
+[tool.pytest]
+addopts = ["--strict-markers"]
+markers = ["unit_test: specific test demonstrating correctness"]
+pythonpath = ["src"]
+
 [tool.ruff.lint]
 select = ["ANN", "F", "I"]
 
