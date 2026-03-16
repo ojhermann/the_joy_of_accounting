@@ -1,0 +1,22 @@
+[[language]]
+name = "python"
+auto-format = true
+formatter = { command = "ruff", args = ["format", "--quiet", "-"] }
+
+[language.debugger]
+name = "debugpy"
+transport = "stdio"
+command = ".venv/bin/python"
+args = ["-m", "debugpy.adapter"]
+
+[[language.debugger.templates]]
+name = "source"
+request = "launch"
+completion = [{ name = "entrypoint", completion = "filename", default = "." }]
+args = { mode = "debug", program = "{0}" }
+
+[[language.debugger.templates]]
+name = "module"
+request = "launch"
+completion = [{ name = "module", completion = "directory", default = "." }]
+args = { mode = "module", module = "{0}" }
