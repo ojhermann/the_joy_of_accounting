@@ -5,6 +5,7 @@ python.uv_venv_auto = "create|source"
 watch_ruff = "watchexec --exts py -- sh -c 'clear && uv run ruff check'"
 watch_ty = "watchexec --exts py -- sh -c 'clear && uv run ty check'"
 watch_unit_tests = "watchexec --exts py -- sh -c 'clear && uv run pytest -m unit_test'"
+wrap_quotes = "uv run python src/tool/wrap_quotes.py $@"
 
 [tools]
 glow = "latest"
