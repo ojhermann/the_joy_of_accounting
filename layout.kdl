@@ -15,9 +15,8 @@ layout {
                 pane command="hx" name="hx" {
                     start_suspended false
                 }
-                pane command="zellij" name="zsh" focus=true expanded=true {
-                    args "ac" "dump-layout"
-                    start_suspended false
+                pane name="zsh" focus=true expanded=true {
+
                 }
             }
         }
