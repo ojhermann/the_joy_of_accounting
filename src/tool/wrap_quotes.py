@@ -14,7 +14,11 @@ def wrap_quotes(content: str) -> str:
     result = []
     for part in parts:
         stripped = part.strip()
-        if not stripped or CITATION_PATTERN.match(stripped):
+        if (
+            not stripped
+            or CITATION_PATTERN.match(stripped)
+            or (stripped.startswith("`") and stripped.endswith("`"))
+        ):
             result.append(part)
         else:
             result.append("`" + stripped + "`")

@@ -30,6 +30,12 @@ def test_only_citation() -> None:
 
 
 @pytest.mark.unit_test
+def test_already_wrapped() -> None:
+    text: str = "`Already wrapped.`"
+    assert wrap_quotes(text) == "`Already wrapped.`"
+
+
+@pytest.mark.unit_test
 def test_mixed() -> None:
     content: str = f"First quote.\n\n{CITATION_21}\n\nSecond quote.\n\n{CITATION_42}\n"
     expected: str = (
