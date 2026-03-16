@@ -9,6 +9,8 @@ formatter = { command = "prettier", args = [
   "80",
   "--parser",
   "markdown",
+  "--embedded-language-formatting",
+  "auto",
 ] }
 
 [[language]]
