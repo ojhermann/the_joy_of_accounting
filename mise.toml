@@ -7,5 +7,6 @@ watch_ty = "watchexec --exts py -- sh -c 'clear && uv run ty check'"
 watch_unit_tests = "watchexec --exts py -- sh -c 'clear && uv run pytest -m unit_test'"
 
 [tools]
+prek = "latest"
 uv = "latest"
 watchexec = "latest"
