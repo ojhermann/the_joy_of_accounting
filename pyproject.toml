@@ -3,9 +3,7 @@ name = "the-joy-of-accounting"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
-authors = [
-    { name = "Otto Hermann", email = "ojhermann@gmail.com" }
-]
+authors = [{ name = "Otto Hermann", email = "ojhermann@gmail.com" }]
 requires-python = ">=3.14"
 dependencies = []
 
@@ -15,7 +13,12 @@ build-backend = "uv_build"
 
 [dependency-groups]
 dev = [
-    "pytest>=9.0.2",
-    "ruff>=0.15.6",
-    "ty>=0.0.23",
+  "jedi-language-server>=0.46.0",
+  "pytest>=9.0.2",
+  "python-lsp-server>=1.14.0",
+  "ruff>=0.15.6",
+  "ty>=0.0.23",
 ]
+
+[tool.uv]
+default-groups = ["dev"]
