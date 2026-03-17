@@ -11,4 +11,5 @@ and related code.
 I'm using this to experiment with uses of the
 [Claude Developer Platform](https://platform.claude.com)
 
-- [What is Accounting?](/notes/1_what_is_accounting.md)
+- [What is Accounting?](/notes/what_is_accounting.md)
+- [Assets](/notes/assets.md)
